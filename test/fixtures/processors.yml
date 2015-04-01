@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  date_submitted: 2015-03-31
+  approved: false
+  date_approved: 2015-03-31
+  current_rates: MyString
+  bank_1: MyString
+  bank_2: MyString
+  monthly_amount: MyString
+
+two:
+  name: MyString
+  date_submitted: 2015-03-31
+  approved: false
+  date_approved: 2015-03-31
+  current_rates: MyString
+  bank_1: MyString
+  bank_2: MyString
+  monthly_amount: MyString

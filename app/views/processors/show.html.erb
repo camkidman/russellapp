@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @processor.name %>
+</p>
+
+<p>
+  <strong>Date submitted:</strong>
+  <%= @processor.date_submitted %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @processor.approved %>
+</p>
+
+<p>
+  <strong>Date approved:</strong>
+  <%= @processor.date_approved %>
+</p>
+
+<p>
+  <strong>Current rates:</strong>
+  <%= @processor.current_rates %>
+</p>
+
+<p>
+  <strong>Bank 1:</strong>
+  <%= @processor.bank_1 %>
+</p>
+
+<p>
+  <strong>Bank 2:</strong>
+  <%= @processor.bank_2 %>
+</p>
+
+<p>
+  <strong>Monthly amount:</strong>
+  <%= @processor.monthly_amount %>
+</p>
+
+<%= link_to 'Edit', edit_processor_path(@processor) %> |
+<%= link_to 'Back', processors_path %>

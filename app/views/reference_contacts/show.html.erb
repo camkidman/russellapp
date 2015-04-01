@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @reference_contact.name %>
+</p>
+
+<p>
+  <strong>Known from:</strong>
+  <%= @reference_contact.known_from %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @reference_contact.phone %>
+</p>
+
+<%= link_to 'Edit', edit_reference_contact_path(@reference_contact) %> |
+<%= link_to 'Back', reference_contacts_path %>

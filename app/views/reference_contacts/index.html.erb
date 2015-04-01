@@ -1,0 +1,29 @@
+<h1>Listing reference_contacts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Known from</th>
+      <th>Phone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reference_contacts.each do |reference_contact| %>
+      <tr>
+        <td><%= reference_contact.name %></td>
+        <td><%= reference_contact.known_from %></td>
+        <td><%= reference_contact.phone %></td>
+        <td><%= link_to 'Show', reference_contact %></td>
+        <td><%= link_to 'Edit', edit_reference_contact_path(reference_contact) %></td>
+        <td><%= link_to 'Destroy', reference_contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reference contact', new_reference_contact_path %>

@@ -1,0 +1,65 @@
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Entity name</th>
+      <th>Ein</th>
+      <th>Date established</th>
+      <th>Percent of ownership</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Birthdate</th>
+      <th>Address</th>
+      <th>Address 2</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>City</th>
+      <th>Time at current residence years</th>
+      <th>Time at current residence months</th>
+      <th>Drivers license number</th>
+      <th>Drivers licence expiration</th>
+      <th>Drivers license state</th>
+      <th>Ssn</th>
+      <th>Bank account number</th>
+      <th>Bank routing number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.entity_name %></td>
+        <td><%= user.ein %></td>
+        <td><%= user.date_established %></td>
+        <td><%= user.percent_of_ownership %></td>
+        <td><%= user.phone %></td>
+        <td><%= user.email %></td>
+        <td><%= user.birthdate %></td>
+        <td><%= user.address %></td>
+        <td><%= user.address_2 %></td>
+        <td><%= user.state %></td>
+        <td><%= user.zip %></td>
+        <td><%= user.city %></td>
+        <td><%= user.time_at_current_residence_years %></td>
+        <td><%= user.time_at_current_residence_months %></td>
+        <td><%= user.drivers_license_number %></td>
+        <td><%= user.drivers_licence_expiration %></td>
+        <td><%= user.drivers_license_state %></td>
+        <td><%= user.ssn %></td>
+        <td><%= user.bank_account_number %></td>
+        <td><%= user.bank_routing_number %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>

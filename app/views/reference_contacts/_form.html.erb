@@ -1,0 +1,29 @@
+<%= form_for(@reference_contact) do |f| %>
+  <% if @reference_contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reference_contact.errors.count, "error") %> prohibited this reference_contact from being saved:</h2>
+
+      <ul>
+      <% @reference_contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :known_from %><br>
+    <%= f.text_field :known_from %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
