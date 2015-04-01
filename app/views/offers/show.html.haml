@@ -1,0 +1,59 @@
+%p#notice= notice
+%p
+  %strong Name:
+  = @offer.name
+%p
+  %strong Website:
+  = @offer.website
+%p
+  %strong Whos offer:
+  = @offer.whos_offer
+%p
+  %strong Fulfillment:
+  = @offer.fulfillment
+%p
+  %strong Trial:
+  = @offer.trial
+%p
+  %strong Customer support phone:
+  = @offer.customer_support_phone
+%p
+  %strong Customer support email:
+  = @offer.customer_support_email
+%p
+  %strong Fax number:
+  = @offer.fax_number
+%p
+  %strong Hours of operation:
+  = @offer.hours_of_operation
+%p
+  %strong Description:
+  = @offer.description
+
+%h1 Processors for this offer
+%table
+  %thead
+    %tr
+    %th Name
+    %th Date Submitted
+    %th Approved?
+    %th Date Approved
+    %th Current Rates
+    %th Bank 1
+    %th Bank 2
+    %th Monthly Amount
+    %th{:colspan => "3"}
+  %tbody
+    - @offer.processors.each do |processor|
+      %tr
+      %td= processor.name
+      %td= processor.date_submitted
+      %td= processor.approved
+      %td= processor.date_approved
+      %td= processor.current_rates
+      %td= processor.bank_1
+      %td= processor.bank_2
+      %td= processor.monthly_amount
+
+= link_to 'Edit', edit_user_offer_path(@user, @offer)
+= link_to 'Back', user_offers_path(@user)

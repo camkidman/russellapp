@@ -1,10 +1,12 @@
 class ProcessorsController < ApplicationController
   before_action :set_processor, only: [:show, :edit, :update, :destroy]
+  before_action :set_user
+  before_action :set_offer
 
   # GET /processors
   # GET /processors.json
   def index
-    @processors = Processor.all
+    @processors = @offer.processors
   end
 
   # GET /processors/1
@@ -13,12 +15,13 @@ class ProcessorsController < ApplicationController
   end
 
   # GET /processors/new
-  def new
-    @processor = Processor.new
-  end
+  # def new -- probably never going to hit this one either, but if so, we'd just need to add a name.
+  #   @processor = Processor.new
+  # end
 
   # GET /processors/1/edit
   def edit
+    @processor = Processor.find(params[:id])
   end
 
   # POST /processors
@@ -70,5 +73,13 @@ class ProcessorsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def processor_params
       params.require(:processor).permit(:name, :date_submitted, :approved, :date_approved, :current_rates, :bank_1, :bank_2, :monthly_amount)
+    end
+
+    def set_user
+      @user = User.find(params[:user_id])
+    end
+
+    def set_offer
+      @offer = Offer.find(params[:offer_id])
     end
 end

@@ -105,5 +105,6 @@
   <%= @user.bank_routing_number %>
 </p>
 
+<%= link_to 'Create New Offer', new_user_offer_path(@user) %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

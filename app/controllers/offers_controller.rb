@@ -1,10 +1,11 @@
 class OffersController < ApplicationController
   before_action :set_offer, only: [:show, :edit, :update, :destroy]
+  before_action :set_user
 
   # GET /offers
   # GET /offers.json
   def index
-    @offers = Offer.all
+    @offers = @user.offers
   end
 
   # GET /offers/1
@@ -28,7 +29,7 @@ class OffersController < ApplicationController
 
     respond_to do |format|
       if @offer.save
-        format.html { redirect_to @offer, notice: 'Offer was successfully created.' }
+        format.html { redirect_to user_offers_path(@user), notice: 'Offer was successfully created.' }
         format.json { render :show, status: :created, location: @offer }
       else
         format.html { render :new }
@@ -69,6 +70,10 @@ class OffersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def offer_params
-      params.require(:offer).permit(:name, :website, :whos_offer, :fulfillment, :trial, :customer_support_phone, :customer_support_email, :fax_number, :hours_of_operation, :description)
+      params.require(:offer).permit(:name, :website, :whos_offer, :fulfillment, :trial, :customer_support_phone, :customer_support_email, :fax_number, :hours_of_operation, :description, :user_id)
+    end
+
+    def set_user
+      @user = User.find(params[:user_id])
     end
 end
