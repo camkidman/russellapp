@@ -45,7 +45,7 @@ class ProcessorsController < ApplicationController
   def update
     respond_to do |format|
       if @processor.update(processor_params)
-        format.html { redirect_to @processor, notice: 'Processor was successfully updated.' }
+        format.html { redirect_to user_path(@user), notice: 'Processor was successfully updated.' }
         format.json { render :show, status: :ok, location: @processor }
       else
         format.html { render :edit }
