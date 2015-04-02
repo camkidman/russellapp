@@ -54,6 +54,7 @@
       %td= processor.bank_1
       %td= processor.bank_2
       %td= processor.monthly_amount
+      %td= link_to 'generate form', meritus_form_path(processor.id)
 
 = link_to 'Edit', edit_user_offer_path(@user, @offer)
 = link_to 'Back', user_offers_path(@user)

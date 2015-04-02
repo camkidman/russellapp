@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'meritus_form/:processor_id', to: 'pdf_generator#meritus', as: 'meritus_form'
+
   root 'users#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
