@@ -38,3 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'haml-rails'
+gem 'simple_form'
+gem 'better_errors'
+gem 'binding_of_caller'
+gem 'pdf-forms'

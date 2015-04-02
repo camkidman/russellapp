@@ -5,3 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+PROCESSORS = %w(AVPS DPS EMB EMS GMA International Vantage/Humbolt Meritus NMC PayMitco Pivitol PowerPay PX/Esquire SelectBankCard TrustOne/DuetcheBanks USMerchant WoodForest NMA MES)
