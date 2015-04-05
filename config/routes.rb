@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'meritus_form/:processor_id', to: 'pdf_generator#meritus', as: 'meritus_form'
+  get 'cardworks_merrick/:processor_id', to: 'pdf_generator#cardworks_merrick', as: 'cardworks_merrick_form'
 
   root 'users#index'
 

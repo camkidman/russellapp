@@ -3,6 +3,9 @@
   %strong Name:
   = @offer.name
 %p
+  %strong Legal name:
+  = @offer.legal_name
+%p
   %strong Website:
   = @offer.website
 %p
@@ -46,7 +49,7 @@
   %tbody
     - @offer.processors.each do |processor|
       %tr
-      %td= processor.name
+      %td= link_to processor.name, edit_user_offer_processor_path(@user, @offer, processor)
       %td= processor.date_submitted
       %td= processor.approved
       %td= processor.date_approved
@@ -54,7 +57,7 @@
       %td= processor.bank_1
       %td= processor.bank_2
       %td= processor.monthly_amount
-      %td= link_to 'generate form', meritus_form_path(processor.id)
+      %td= link_to 'generate form', cardworks_merrick_form_path(processor.id)
 
 = link_to 'Edit', edit_user_offer_path(@user, @offer)
 = link_to 'Back', user_offers_path(@user)

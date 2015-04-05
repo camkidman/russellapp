@@ -75,4 +75,12 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.routing_number = "124002971"
+  config.bank_name = "Wells Fargo"
+  config.bank_contact_phone = "801-342-2012"
+  config.bank_contact_name = "Riley Risto"
+  config.trade_reference = "ProTax"
+  config.trade_reference_contact_name = "Sue Russell"
+  config.trade_reference_contact_phone = "801-787-9492"
 end

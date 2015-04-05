@@ -7,4 +7,16 @@ class PdfGeneratorController < ApplicationController
     end
 
   end
+
+  def cardworks_merrick
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.pdf { send_file CardworksMerrick.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
+
+
 end
