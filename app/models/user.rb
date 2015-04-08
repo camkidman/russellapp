@@ -6,4 +6,8 @@ class User < ActiveRecord::Base
   def name
     first_name + " " + last_name
   end
+  
+  def full_address
+    address + ", " + city + ", " + state + ", " + zip
+  end
 end
