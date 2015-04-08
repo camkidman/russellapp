@@ -78,7 +78,7 @@ ActiveRecord::Schema.define(version: 20150405191554) do
     t.integer  "time_at_current_residence_years"
     t.integer  "time_at_current_residence_months"
     t.string   "drivers_license_number"
-    t.date     "drivers_licence_expiration"
+    t.date     "drivers_license_expiration"
     t.string   "drivers_license_state"
     t.string   "ssn"
     t.string   "bank_account_number"
