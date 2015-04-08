@@ -59,4 +59,44 @@ class PdfGeneratorController < ApplicationController
 
   end
 
+  def ems_merchant
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file EmsMerchant.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file EmsMerchant.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
+  def ems_merrick
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file EmsMerrick.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file EmsMerrick.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
+  def global_merrick
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file GlobalMerrick.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file GlobalMerrick.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
+  def humbolt_harris
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file HumboltHarris.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file HumboltHarris.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
 end
