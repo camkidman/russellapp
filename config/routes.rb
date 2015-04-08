@@ -8,6 +8,24 @@ Rails.application.routes.draw do
   end
 
   get 'cardworks_merrick/:processor_id', to: 'pdf_generator#cardworks_merrick', as: 'cardworks_merrick_form'
+  get 'choice_merrick/:processor_id', to: 'pdf_generator#choice_merrick', as: 'choice_merrick_form'
+  get 'dps_merchant/:processor_id', to: 'pdf_generator#dps_merchant', as: 'dps_merchant_form'
+  get 'emerchant_broker/:processor_id', to: 'pdf_generator#emerchant_broker', as: 'emerchant_broker_form'
+  get 'ems_harris/:processor_id', to: 'pdf_generator#ems_harris', as: 'ems_harris_form'
+  get 'ems_merchant/:processor_id', to: 'pdf_generator#ems_merchant', as: 'ems_merchant_form'
+  get 'ems_merrick/:processor_id', to: 'pdf_generator#ems_merrick', as: 'ems_merrick_form'
+  get 'global_merrick/:processor_id', to: 'pdf_generator#global_merrick', as: 'global_merrick_form'
+  get 'humbolt_harris/:processor_id', to: 'pdf_generator#humbolt_harris', as: 'humbolt_harris_form'
+  get 'll_merchant/:processor_id', to: 'pdf_generator#ll_merchant', as: 'll_merchant_form'
+  get 'meritus_woodforest/:processor_id', to: 'pdf_generator#meritus_woodforest', as: 'meritus_woodforest_form'
+  get 'national_merchant_association_harris_bank/:processor_id', to: 'pdf_generator#national_merchant_association_harris_bank', as: 'national_merchant_association_harris_bank_form'
+  get 'merchant_esolutions/:processor_id', to: 'pdf_generator#merchant_esolutions', as: 'merchant_esolutions_form'
+  get 'nmc/:processor_id', to: 'pdf_generator#nmc', as: 'nmc_form'
+  get 'paymentworld_esquire/:processor_id', to: 'pdf_generator#paymentworld_esquire', as: 'paymentworld_esquire_form'
+  get 'paymentworld_merrick/:processor_id', to: 'pdf_generator#paymentworld_merrick', as: 'paymentworld_merrick_form'
+  get 'powerpay/:processor_id', to: 'pdf_generator#powerpay', as: 'powerpay_form'
+  get 'vantage_humbolt/:processor_id', to: 'pdf_generator#vantage_humbolt', as: 'vantage_humbolt_form'
+  get 'vps_merchant/:processor_id', to: 'pdf_generator#vps_merchant', as: 'vps_merchant_form'
 
   root 'users#index'
 
