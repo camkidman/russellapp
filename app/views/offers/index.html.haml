@@ -55,6 +55,7 @@
                 %td= processor.bank_1
                 %td= processor.bank_2
                 %td= processor.monthly_amount
+                %td= link_to 'Generate Form', send("#{processor.name.downcase}_form_path", processor.id)
 
 
 = link_to 'New Offer', new_user_offer_path(@user)
