@@ -45,6 +45,7 @@ class NationalMerchantAssociationHarrisBank < FillablePdfForm
         'Settlement Info.0.1'.to_sym => Rails.application.config.bank_contact_name,
         'bank-phone'.to_sym => Rails.application.config.bank_contact_phone,
         'Settlement Info.1.0'.to_sym => Rails.application.config.routing_number,
+        'card-not-present-personal-guarantee-printedname'.to_sym => @processor.offer.user.name + ", " @processor.offer.user.address,
         
 
 
