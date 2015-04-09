@@ -109,4 +109,24 @@ class PdfGeneratorController < ApplicationController
 
   end
 
+  def nmc
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file Nmc.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file Nmc.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
+  def paymentworld_esquire
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file PaymentworldEsquire.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file PaymentworldEsquire.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
 end
