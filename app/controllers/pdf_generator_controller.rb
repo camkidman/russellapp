@@ -1,10 +1,10 @@
 class PdfGeneratorController < ApplicationController
-  def meritus
+  def meritus_woodforest
     processor = Processor.find(params[:processor_id])
 
     respond_to do |format|
-      format.html { send_file MeritusForm.new(processor).export, type: 'application/pdf' }
-      format.pdf { send_file MeritusForm.new(processor).export, type: 'application/pdf' }
+      format.html { send_file MeritusWoodforest.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file MeritusWoodforest.new(processor).export, type: 'application/pdf' }
     end
 
   end
