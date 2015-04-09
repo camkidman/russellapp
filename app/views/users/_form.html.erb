@@ -45,7 +45,7 @@
   </div>
   <div class="field">
     <%= f.label :birthdate %><br>
-    <%= f.date_select :birthdate #TODO -- need to modify the dates it's selecting here%>
+    <%= f.date_select :birthdate, start_year: 1940 %>
   </div>
   <div class="field">
     <%= f.label :address %><br>
