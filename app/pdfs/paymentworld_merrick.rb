@@ -1,4 +1,4 @@
-class PaymentworldEsquire < FillablePdfForm
+class PaymentworldMerrick < FillablePdfForm
 
   def initialize(processor)
     @processor = processor
@@ -21,10 +21,10 @@ class PaymentworldEsquire < FillablePdfForm
         'topmostSubform[0].Page2[0].COMPANY_PHONE[0]'.to_sym => @processor.offer.customer_support_phone,
         'topmostSubform[0].Page2[0].MOBILE_PHONE[0]'.to_sym => @processor.offer.user.phone,
         'topmostSubform[0].Page2[0].FAX[0]'.to_sym => @processor.offer.fax_number,
-        'topmostSubform[0].Page2[0].CONTACT_NAME[0]'.to_sym => @processor.offer.user.name,
+        'topmostSubform[0].Page2[0].CONTACT[0]'.to_sym => @processor.offer.user.name,
         'topmostSubform[0].Page2[0].TITLE_4[0]'.to_sym => @processor.offer.user.title,
-        'topmostSubform[0].Page2[0].COMP_WEBSITE[0]'.to_sym => @processor.offer.website,
-        'topmostSubform[0].Page2[0].COMPANY_EMAIL_ADDRESS[0]'.to_sym => @processor.offer.customer_support_email,
+        'topmostSubform[0].Page2[0].COMPANYWEBSITE[0]'.to_sym => @processor.offer.website,
+        'topmostSubform[0].Page2[0].COMPANY_EMAIL[0]'.to_sym => @processor.offer.customer_support_email,
         'topmostSubform[0].Page2[0].PRINCIPAL_NAME_FIRST_ML_LAST_1[0]'.to_sym => @processor.offer.user.name,
         'topmostSubform[0].Page2[0].TITLE_5[0]'.to_sym => @processor.offer.user.title,
         'topmostSubform[0].Page2[0].OWNERSHIP[0]'.to_sym => @processor.offer.user.percent_of_ownership,
@@ -45,8 +45,8 @@ class PaymentworldEsquire < FillablePdfForm
         'topmostSubform[0].Page3[0].BANK_NAME[0]'.to_sym => Rails.application.config.bank_name,
         'topmostSubform[0].Page3[0].BANK_ROUTING_[0]'.to_sym => Rails.application.config.routing_number,
         'topmostSubform[0].Page3[0].PRINT_NAME_4[0]'.to_sym => @processor.offer.user.name,
-        'topmostSubform[0].Page4[0].TITLE_7[0]'.to_sym => @processor.offer.user.title,
-        'topmostSubform[0].Page4[0].PRINT_NAME_5[0]'.to_sym => @processor.offer.user.name,
+        'topmostSubform[0].Page4[0].TITLE_7[1]'.to_sym => @processor.offer.user.title,
+        'topmostSubform[0].Page4[0].PRINT_NAME_5[1]'.to_sym => @processor.offer.user.name,
         'topmostSubform[0].Page4[0].PRINT_NAME_OF_GUARANTOR[0]'.to_sym => @processor.offer.user.name
     }
 

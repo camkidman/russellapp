@@ -129,4 +129,44 @@ class PdfGeneratorController < ApplicationController
 
   end
 
+  def paymentworld_merrick
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file PaymentworldMerrick.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file PaymentworldMerrick.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
+  def powerpay
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file Powerpay.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file Powerpay.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
+  def vantage_humbolt
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file VantageHumbolt.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file VantageHumbolt.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
+  def vps_merchant
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file VpsMerchant.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file VpsMerchant.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
 end

@@ -10,4 +10,8 @@ class User < ActiveRecord::Base
   def full_address
     address + ", " + city + ", " + state + ", " + zip
   end
+
+  def city_state_zip
+    city + ", " + state + ", " + zip
+  end
 end
