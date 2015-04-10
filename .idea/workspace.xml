@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="290cceb2-a23c-4529-b573-8ca6cec69fb4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pdfs/paymentworld_merrick.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pdfs/powerpay.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pdfs/vantage_humbolt.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pdfs/vps_merchant.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pdfs/paymentworld_esquire.rb" afterPath="$PROJECT_DIR$/app/pdfs/paymentworld_esquire.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pdf_generator_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pdf_generator_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pdfs/fillable_pdf_form.rb" afterPath="$PROJECT_DIR$/app/pdfs/fillable_pdf_form.rb" />
     </list>
     <ignored path="russellapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,31 +27,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="vps_merchant.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/pdfs/vps_merchant.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80654764" vertical-offset="72" max-vertical-offset="1080">
-              <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vantage_humbolt.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pdfs/vantage_humbolt.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
-              <caret line="45" column="57" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pdf_generator_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/pdf_generator_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1557" max-vertical-offset="2655">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2655">
               <caret line="166" column="40" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dps_merchant.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pdfs/dps_merchant.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+              <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fillable_pdf_form.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/pdfs/fillable_pdf_form.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14880952" vertical-offset="0" max-vertical-offset="1008">
+              <caret line="10" column="95" selection-start-line="10" selection-start-column="95" selection-end-line="10" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -83,7 +76,6 @@
         <option value="$PROJECT_DIR$/app/views/processors/edit.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/processors_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/pdfs/fillable_pdf_form.rb" />
         <option value="$PROJECT_DIR$/app/models/offer.rb" />
         <option value="$PROJECT_DIR$/app/views/offers/_form.html.haml" />
         <option value="$PROJECT_DIR$/db/migrate/20150401012943_add_name_to_user.rb" />
@@ -123,6 +115,7 @@
         <option value="$PROJECT_DIR$/app/pdfs/vantage_humbolt.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pdf_generator_controller.rb" />
         <option value="$PROJECT_DIR$/app/pdfs/vps_merchant.rb" />
+        <option value="$PROJECT_DIR$/app/pdfs/fillable_pdf_form.rb" />
       </list>
     </option>
   </component>
@@ -654,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pdfs/fillable_pdf_form.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/processors_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
@@ -925,14 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pdfs/dps_merchant.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3422619" vertical-offset="0" max-vertical-offset="1008">
-          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pdfs/powerpay.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5654762" vertical-offset="0" max-vertical-offset="1008">
@@ -981,9 +959,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/pdfs/vps_merchant.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80654764" vertical-offset="72" max-vertical-offset="1080">
+          <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/pdfs/vantage_humbolt.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+        <state vertical-scroll-proportion="0.66964287" vertical-offset="0" max-vertical-offset="1008">
           <caret line="45" column="57" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="3" />
           <folding />
         </state>
@@ -991,16 +977,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pdf_generator_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1557" max-vertical-offset="2655">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2655">
           <caret line="166" column="40" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pdfs/vps_merchant.rb">
+    <entry file="file://$PROJECT_DIR$/app/pdfs/dps_merchant.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80654764" vertical-offset="72" max-vertical-offset="1080">
-          <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pdfs/fillable_pdf_form.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14880952" vertical-offset="0" max-vertical-offset="1008">
+          <caret line="10" column="95" selection-start-line="10" selection-start-column="95" selection-end-line="10" selection-end-column="95" />
           <folding />
         </state>
       </provider>
