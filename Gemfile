@@ -40,7 +40,7 @@ gem 'spring',        group: :development
 
 gem 'haml-rails'
 gem 'simple_form'
-gem 'better_errors'
+gem 'better_errors', group: :development
 gem 'binding_of_caller'
 gem 'pdf-forms'
 gem 'jquery-ui-rails'
