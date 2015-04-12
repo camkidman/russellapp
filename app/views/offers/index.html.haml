@@ -54,7 +54,7 @@
                 %td= processor.current_rates
                 %td= processor.bank_1
                 %td= processor.bank_2
-                %td= processor.monthly_amount
+                %td= number_to_currency(processor.monthly_amount)
                 %td= link_to 'Generate Form', send("#{processor.name.downcase}_form_path", processor.id)
 
 

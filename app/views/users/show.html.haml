@@ -1,67 +1,70 @@
 %p#notice= notice
-%p
+.grid_3
+  %p
   %strong Name:
   = "#{@user.first_name} #{@user.last_name}"
-%p
-  %strong Entity name:
-  = @user.entity_name
-%p
-  %strong Ein:
-  = @user.ein
-%p
-  %strong Date established:
-  = @user.date_established
-%p
-  %strong Percent of ownership:
-  = @user.percent_of_ownership
-%p
-  %strong Phone:
-  = @user.phone
-%p
-  %strong Email:
-  = @user.email
-%p
-  %strong Birthdate:
-  = @user.birthdate
-%p
-  %strong Address:
-  = @user.address
-%p
-  %strong Address 2:
-  = @user.address_2
-%p
-  %strong State:
-  = @user.state
-%p
-  %strong Zip:
-  = @user.zip
-%p
-  %strong City:
-  = @user.city
-%p
-  %strong Time at current residence years:
-  = @user.time_at_current_residence_years
-%p
-  %strong Time at current residence months:
-  = @user.time_at_current_residence_months
-%p
-  %strong Drivers license number:
-  = @user.drivers_license_number
-%p
-  %strong Drivers licence expiration:
-  = @user.drivers_license_expiration
-%p
-  %strong Drivers license state:
-  = @user.drivers_license_state
-%p
-  %strong Ssn:
-  = @user.ssn
-%p
-  %strong Bank account number:
-  = @user.bank_account_number
-%p
-  %strong Bank routing number:
-  = @user.bank_routing_number
+  %p
+    %strong Entity name:
+    = @user.entity_name
+  %p
+    %strong Ein:
+    = @user.ein
+  %p
+    %strong Date established:
+    = @user.date_established
+  %p
+    %strong Percent of ownership:
+    = @user.percent_of_ownership
+  %p
+    %strong Phone:
+    = @user.phone
+  %p
+    %strong Email:
+    = @user.email
+.grid_3
+  %p
+    %strong Birthdate:
+    = @user.birthdate
+  %p
+    %strong Address:
+    = @user.address
+  %p
+    %strong Address 2:
+    = @user.address_2
+  %p
+    %strong State:
+    = @user.state
+  %p
+    %strong Zip:
+    = @user.zip
+  %p
+    %strong City:
+    = @user.city
+  %p
+    %strong Time at current residence years:
+    = @user.time_at_current_residence_years
+.grid_3
+  %p
+    %strong Time at current residence months:
+    = @user.time_at_current_residence_months
+  %p
+    %strong Drivers license number:
+    = @user.drivers_license_number
+  %p
+    %strong Drivers licence expiration:
+    = @user.drivers_license_expiration
+  %p
+    %strong Drivers license state:
+    = @user.drivers_license_state
+  %p
+    %strong Ssn:
+    = @user.ssn
+  %p
+    %strong Bank account number:
+    = @user.bank_account_number
+  %p
+    %strong Bank routing number:
+    = @user.bank_routing_number
 
 %h2 Offers:
 %table

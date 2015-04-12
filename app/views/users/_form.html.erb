@@ -29,7 +29,7 @@
   </div>
   <div class="field">
     <%= f.label :date_established %><br>
-    <%= f.date_select :date_established %>
+    <%= f.date_select :date_established, order: [:month, :day, :year] %>
   </div>
   <div class="field">
     <%= f.label :percent_of_ownership %><br>
@@ -45,7 +45,7 @@
   </div>
   <div class="field">
     <%= f.label :birthdate %><br>
-    <%= f.date_select :birthdate, start_year: 1940 %>
+    <%= f.date_select :birthdate, start_year: 1940, order: [:month, :day, :year] %>
   </div>
   <div class="field">
     <%= f.label :address %><br>
@@ -55,18 +55,19 @@
     <%= f.label :address_2 %><br>
     <%= f.text_field :address_2 %>
   </div>
+<div class="field">
+  <%= f.label :city %><br>
+  <%= f.text_field :city %>
+</div>
   <div class="field">
     <%= f.label :state %><br>
-    <%= f.text_field :state %>
+    <%= f.select :state, options_for_select(us_states)  %>
   </div>
   <div class="field">
     <%= f.label :zip %><br>
     <%= f.text_field :zip %>
   </div>
-  <div class="field">
-    <%= f.label :city %><br>
-    <%= f.text_field :city %>
-  </div>
+
   <div class="field">
     <%= f.label :time_at_current_residence_years %><br>
     <%= f.number_field :time_at_current_residence_years %>
@@ -81,11 +82,11 @@
   </div>
   <div class="field">
     <%= f.label :drivers_license_expiration %><br>
-    <%= f.date_select :drivers_license_expiration %>
+    <%= f.date_select :drivers_license_expiration, order: [:month, :day, :year] %>
   </div>
   <div class="field">
     <%= f.label :drivers_license_state %><br>
-    <%= f.text_field :drivers_license_state %>
+    <%= f.select :state, options_for_select(us_states)  %>
   </div>
   <div class="field">
     <%= f.label :ssn %><br>

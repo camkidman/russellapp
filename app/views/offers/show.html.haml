@@ -47,7 +47,7 @@
     %th Monthly Amount
     %th{:colspan => "3"}
   %tbody
-    - @offer.processors.each do |processor|
+    - @offer.processors.order('lower(name) ASC').each do |processor|
       %tr
       %td= link_to processor.name, edit_user_offer_processor_path(@user, @offer, processor)
       %td= processor.date_submitted
@@ -56,7 +56,7 @@
       %td= processor.current_rates
       %td= processor.bank_1
       %td= processor.bank_2
-      %td= processor.monthly_amount
+      %td= number_to_currency(processor.monthly_amount)
       %td= link_to 'generate form', send("#{processor.name.downcase}_form_path", processor.id)
 
 = link_to 'Edit', edit_user_offer_path(@user, @offer)

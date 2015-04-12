@@ -14,7 +14,7 @@
   .field
     = f.label :date_submitted
     %br
-    = f.date_select :date_submitted
+    = f.date_select :date_submitted, order: [:month, :day, :year]
   .field
     = f.label :approved
     %br
@@ -22,7 +22,7 @@
   .field
     = f.label :date_approved
     %br
-    = f.date_select :date_approved
+    = f.date_select :date_approved, order: [:month, :day, :year]
   .field
     = f.label :current_rates
     %br
@@ -38,6 +38,7 @@
   .field
     = f.label :monthly_amount
     %br
+    $
     = f.text_field :monthly_amount
   .actions
     = f.submit

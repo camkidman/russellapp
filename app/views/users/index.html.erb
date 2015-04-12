@@ -31,7 +31,7 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.first_name + " " + user.last_name %></td>
+        <td><%= link_to "#{user.first_name} #{user.last_name}", user %></td>
         <td><%= user.entity_name %></td>
         <td><%= user.ein %></td>
         <td><%= user.date_established %></td>
