@@ -3,6 +3,10 @@ class Processor < ActiveRecord::Base
   belongs_to :user
 
   def approved
-    read_attribute(:approved) ? 'Yes' : 'No'
+    if date_submitted.nil?
+      read_attribute(:approved)
+    else
+      read_attribute(:approved) ? 'Yes' : 'No'
+    end
   end
 end
