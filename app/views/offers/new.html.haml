@@ -3,3 +3,6 @@
 = render 'form'
 
 %a= link_to 'Back', user_offers_path(@user)
+:javascript
+  $("#offer_customer_support_phone").mask("999-999-9999");
+  $("#offer_fax_number").mask("999-999-9999");
