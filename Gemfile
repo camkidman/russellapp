@@ -47,3 +47,4 @@ gem 'jquery-ui-rails'
 gem 'rails_12factor'
 gem 'puma'
 gem 'breadcrumbs_on_rails'
+gem 'meta_request', group: :development
