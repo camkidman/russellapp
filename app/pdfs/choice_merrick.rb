@@ -21,7 +21,7 @@ class ChoiceMerrick < FillablePdfForm
         'Telephone Number'.to_sym => @processor.offer.customer_support_phone[4..-1],
         'Fax NumberA'.to_sym => @processor.offer.fax_number[0..2],
         'Fax Number'.to_sym => @processor.offer.fax_number[4..-1],
-        'Federal Tax ID Nine Digits'.to_sym => @processor.offer.user.ssn,
+        'Federal Tax ID Nine Digits'.to_sym => @processor.offer.user.ein,
         'Contact Person'.to_sym => @processor.offer.user.name,
         'Location Address'.to_sym => @processor.offer.user.address,
         :City_2 => @processor.offer.user.city,
