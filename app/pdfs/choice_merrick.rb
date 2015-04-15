@@ -32,6 +32,7 @@ class ChoiceMerrick < FillablePdfForm
         'OWNERS AND OFFICERS'.to_sym => @processor.offer.user.name,
         :SSN => @processor.offer.user.ssn,
         :Title => @processor.offer.user.title,
+        :Title11 => @processor.offer.user.title,
         'Residential Address City State Zip County'.to_sym => @processor.offer.user.address + " " + @processor.offer.user.city + " " + @processor.offer.user.state + ", " + @processor.offer.user.zip,
         'Equity Ownership'.to_sym => @processor.offer.user.percent_of_ownership,
         :YRS_4 => @processor.offer.user.time_at_current_residence_years,
