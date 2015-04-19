@@ -12,6 +12,12 @@
     %br
     = f.text_field :name
   .field
+    = f.input :current_status, collection: Processor::STATUSES
+  .field
+    = f.label :additional_notes
+    %br
+    = f.text_field :additional_notes
+  .field
     = f.label :date_submitted
     %br
     = f.date_select :date_submitted, order: [:month, :day, :year]

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails russellapp: development" uuid="13dff572-2b0d-402c-b54a-3b967cd10116">
+      <user-name>camkidman</user-name>
+      <user-password>df9bdfe2dfeadffcdf89dfe4dfc5dff8dfcfdfcddfd8dfcfdfdedfd9df8b</user-password>
+      <schema-pattern>russellapp_development.pg_catalog russellapp_development.public</schema-pattern>
+      <default-schemas>russellapp_development.pg_catalog russellapp_development.public</default-schemas>
+    </data-source>
+    <data-source name="Rails russellapp: test" uuid="f5eb19ae-fadc-4fa0-8f4f-92f3e00e2589">
+      <schema-pattern>russellapp_test.*</schema-pattern>
+      <default-schemas>russellapp_test.*</default-schemas>
+    </data-source>
+    <data-source name="Rails russellapp: production" uuid="e046bc98-17b6-4227-a383-75479334d3f4">
+      <first-sync>true</first-sync>
+      <user-name>&lt;%= ENV['DATABASE_USER'] %&gt;</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>

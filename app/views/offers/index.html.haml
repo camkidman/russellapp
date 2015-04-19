@@ -36,6 +36,8 @@
             %thead
               %tr
               %th Name
+              %th Status
+              %th Additional Notes
               %th Date Submitted
               %th Approved?
               %th Date Approved
@@ -48,6 +50,8 @@
               %tbody
                 %tr
                 %td= link_to processor.name, edit_user_offer_processor_path(@user, offer, processor)
+                %td= processor.current_status
+                %td= processor.additional_notes
                 %td= processor.date_submitted
                 %td= processor.approved
                 %td= processor.date_approved
