@@ -1571,6 +1571,8 @@
       <column name="created_at" sqlType="timestamp" precision="29" scale="6" nullable="true" jdbcType="93"/>
       <column name="updated_at" sqlType="timestamp" precision="29" scale="6" nullable="true" jdbcType="93"/>
       <column name="offer_id" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="current_status" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="additional_notes" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="processors_pkey" columns="id"/>
       <index name="index_processors_on_offer_id" unique="false" columns="offer_id"/>
     </table>
@@ -1640,6 +1642,11 @@
       <column name="first_name" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="last_name" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="title" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="business_address" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="business_address_2" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="business_city" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="business_state" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="business_zip" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="users_pkey" columns="id"/>
     </table>
     <table name="users_id_seq" schema="public" catalog="russellapp_development" type="SEQUENCE">
