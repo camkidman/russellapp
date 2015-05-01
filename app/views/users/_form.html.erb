@@ -63,6 +63,26 @@
     <%= f.label :state %><br>
     <%= f.select :state, options_for_select(us_states)  %>
   </div>
+    <div class="field">
+      <%= f.label :business_address %><br>
+      <%= f.text_field :business_address %>
+    </div>
+    <div class="field">
+      <%= f.label :business_address_2 %><br>
+      <%= f.text_field :business_address_2 %>
+    </div>
+    <div class="field">
+      <%= f.label :business_city %><br>
+      <%= f.text_field :business_city %>
+    </div>
+    <div class="field">
+      <%= f.label :business_state %><br>
+      <%= f.select :business_state, options_for_select(us_states) %>
+    </div>
+    <div class="field">
+      <%= f.label :business_zip %><br>
+      <%= f.text_field :business_zip %>
+    </div>
   <div class="field">
     <%= f.label :zip %><br>
     <%= f.text_field :zip %>
@@ -86,7 +106,7 @@
   </div>
   <div class="field">
     <%= f.label :drivers_license_state %><br>
-    <%= f.select :state, options_for_select(us_states)  %>
+    <%= f.select :drivers_license_state, options_for_select(us_states)  %>
   </div>
   <div class="field">
     <%= f.label :ssn %><br>
