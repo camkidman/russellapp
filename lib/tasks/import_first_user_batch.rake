@@ -1,4 +1,4 @@
-task :upload_users_from_first_batch do
+task :upload_users_from_first_batch => :environment do
     require 'csv'
 
   x = File.read("#{Rails.root}/lib/upload_users/first_user_batch.csv")
