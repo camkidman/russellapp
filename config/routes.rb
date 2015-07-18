@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   get 'powerpay/:processor_id', to: 'pdf_generator#powerpay', as: 'powerpay_form'
   get 'vantage_humbolt/:processor_id', to: 'pdf_generator#vantage_humbolt', as: 'vantage_humbolt_form'
   get 'vps_merchant/:processor_id', to: 'pdf_generator#vps_merchant', as: 'vps_merchant_form'
+  get 'chesapeake_merrick/:processor_id', to: 'pdf_generator#chesapeake_merrick', as: 'chesapeake_merrick_form'
 
   root 'users#index'
 
