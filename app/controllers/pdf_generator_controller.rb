@@ -179,4 +179,14 @@ class PdfGeneratorController < ApplicationController
 
   end
 
+  def diet_checklist
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file DietChecklist.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file DietChecklist.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
 end
