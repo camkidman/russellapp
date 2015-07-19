@@ -31,6 +31,8 @@ Rails.application.routes.draw do
   get 'diet_checklist/:processor_id', to: 'pdf_generator#diet_checklist', as: 'diet_checklist_form'
   get 'gma_harris/:processor_id', to: 'pdf_generator#gma_harris', as: 'gma_harris_form'
   get 'nma_bmo_mpa/:processor_id', to: 'pdf_generator#nma_bmo_mpa', as: 'nma_bmo_mpa_form'
+  get 'nma_negative_option/:processor_id', to: 'pdf_generator#nma_negative_option', as: 'nma_negative_option_form'
+  get 'paymitco_merchant_account_ach_icl/:processor_id', to: 'pdf_generator#paymitco_merchant_account_ach_icl', as: 'paymitco_merchant_account_ach_icl_form'
 
   root 'users#index'
 

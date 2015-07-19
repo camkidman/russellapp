@@ -209,4 +209,24 @@ class PdfGeneratorController < ApplicationController
 
   end
 
+  def nma_negative_option
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file NmaNegativeOption.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file NmaNegativeOption.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
+  def paymitco_merchant_account_ach_icl
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file PaymitcoMerchantAccountAchIcl.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file PaymitcoMerchantAccountAchIcl.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
 end
