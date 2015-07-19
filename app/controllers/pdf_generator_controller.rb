@@ -199,4 +199,14 @@ class PdfGeneratorController < ApplicationController
 
   end
 
+  def nma_bmo_mpa
+    processor = Processor.find(params[:processor_id])
+
+    respond_to do |format|
+      format.html { send_file Nmabmompa.new(processor).export, type: 'application/pdf' }
+      format.pdf { send_file Nmabmompa.new(processor).export, type: 'application/pdf' }
+    end
+
+  end
+
 end
