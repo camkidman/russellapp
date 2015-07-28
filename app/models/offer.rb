@@ -10,4 +10,15 @@ class Offer < ActiveRecord::Base
     PROCESSORS.each {|s| Processor.create(name: s, offer_id: id)}
   end
 
+  def associate_new_processors
+    o = Offer.all
+    o.each do |offer|
+      Offer::PROCESSORS.each do |name|
+          unless offer.processors.map(&:name).include?(name)
+             offer.processors.create(name: name)
+          end
+        end
+      end
+  end
+
 end
