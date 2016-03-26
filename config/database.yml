@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: russellapp_production
-  username: rails
+  username: deployer
   password: <%= ENV['RUSSELLAPP_DATABASE_PASSWORD'] %>
