@@ -7,8 +7,8 @@ attr_reader :attributes
     fill_out
   end
 
-  def export(output_file_path=nil)
-    output_path = output_file_path || "#{@processor.offer.user.name}-#{@processor.name.downcase}.pdf" # make sure tmp/pdfs exists
+  def export
+    output_path = Rails.root.join('tmp', 'pdfs', "#{@processor.offer.user.name}-#{@processor.name.downcase}.pdf") # make sure tmp/pdfs exists
     pdftk.fill_form template_path, output_path, attributes
     output_path
   end

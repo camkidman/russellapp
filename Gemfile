@@ -53,3 +53,4 @@ gem 'puma'
 gem 'breadcrumbs_on_rails'
 gem 'devise'
 gem 'meta_request', group: :development
+gem 'pdf-reader'
